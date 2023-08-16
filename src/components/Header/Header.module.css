@@ -1,0 +1,10 @@
+.header {
+  height: 5rem;
+  width: 100vw;
+  display: flex;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  height: 4rem;
+}

@@ -1,0 +1,291 @@
+.mainContainer {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  background: #ffffff url("../assets/bannerBackground.svg") no-repeat;
+  background-size: cover;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.hi {
+  font-size: 60px;
+  font-weight: 400;
+  color: #b09bdd;
+}
+
+.brayan {
+  font-size: 80px;
+}
+
+.description {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.avatar {
+  width: 50rem;
+}
+
+.aboutMeContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15rem;
+  overflow: visible;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 5rem;
+  overflow: visible;
+}
+
+.aboutTexts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.brayanPhoto {
+  background-color: #b046c2;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+  overflow-y: hidden;
+  width: auto;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.aboutMeTitle {
+  font-size: 25px;
+  color: #b046c2;
+  font-weight: 400;
+}
+
+.whoAreYou {
+  font-size: 30px;
+  color: #b046c2;
+  font-weight: 700;
+  margin-top: -5px;
+}
+
+.descriptionAboutMe {
+  width: 100%;
+  margin: 1.5rem 0px 0px 0px;
+  font-size: 20px;
+  color: #242323;
+}
+
+.skillsContainer {
+  margin-top: 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.skills {
+  background-color: #b046c2;
+  color: rgb(255, 255, 255);
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 4rem;
+  box-shadow: 0px 20px 0px 15px rgba(0, 0, 0, 0.25);
+  gap: 1rem;
+  overflow: visible;
+}
+
+.skillsTitle {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.skillsSubTitle {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: -8px;
+}
+
+.skillsLine {
+  width: 3rem;
+  height: 5px;
+  background-color: #c4c4c4;
+  border: none;
+  margin-top: -10px;
+}
+
+.skillsDescription {
+  width: 80%;
+  margin: 1.5rem 0px 0px 0px;
+  font-size: 20px;
+  color: #dfdfdf;
+}
+
+.skillsList {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 2rem;
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconContainer {
+  background-color: #958fec;
+  padding: 25px;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.more {
+  font-size: 50px;
+  margin-top: 20px;
+  align-self: flex-end;
+  color: #c4c4c4;
+}
+
+.projectsContainer {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 17rem;
+}
+
+.projects {
+  width: 80rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projectImage {
+  width: 50%;
+  height: 30rem;
+  background-color: #b046c2;
+}
+
+.projectsTitle {
+  font-size: 25px;
+  font-weight: 400;
+  color: #b046c2;
+}
+
+.projectsSubTitle {
+  font-size: 30px;
+  color: #b046c2;
+  font-weight: 700;
+  margin-top: -8px;
+}
+
+.projectsDescription {
+  font-weight: 400;
+  font-size: 20px;
+  width: 70%;
+  color: #4d4d4d;
+}
+
+.projectsList {
+  width: 100%;
+}
+
+.projectTexts {
+  width: 50%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.projectCard {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+}
+
+.projectTitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #b046c2;
+}
+
+.projectSubTitle {
+  font-size: 25px;
+  color: #b046c2;
+  font-weight: 700;
+  margin-top: -25px;
+}
+
+.projectDescription {
+  font-weight: 400;
+  font-size: 18px;
+  width: 100%;
+  color: #4d4d4d;
+}
+
+.projectButton {
+  background-color: #b046c2;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.hr {
+  width: 200px;
+  height: 40px;
+}
