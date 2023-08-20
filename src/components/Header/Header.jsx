@@ -26,7 +26,7 @@ const Header = () => {
             <SiLinkedin className={styles.icon} />
           </a>
           <a
-            href="https:/www.instagram.com/brayan_amarals"
+            href="https://www.instagram.com/brayan_amarals"
             className={styles.iconDiv}
             target="_blank"
           >

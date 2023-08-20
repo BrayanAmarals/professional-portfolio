@@ -1,5 +1,12 @@
 import { AiFillHtml5 } from "react-icons/ai";
-import { SiCss3, SiJavascript, SiReact, SiYarn, SiFigma } from "react-icons/si";
+import {
+  SiCss3,
+  SiJavascript,
+  SiReact,
+  SiYarn,
+  SiFigma,
+  SiAdobexd,
+} from "react-icons/si";
 
 const skillsArray = [
   {
@@ -51,12 +58,12 @@ const skillsArray = [
     icon: <SiFigma style={{ color: "white", fontSize: "40px" }} />,
   },
   {
-    id: 5,
-    name: "Figma",
+    id: 6,
+    name: "Adobe XD",
     description:
-      "Com o Figma, equipes podem trabalhar em conjunto para desenvolver interfaces para sites, aplicativos e quaisquer outros tipos de projetos gráficos. A plataforma conta com um funcionamento simples, baseado em elementos visuais intuitivos.",
+      "Uma das ferramentas mais populares do mercado, o Adobe XD busca trazer soluções para profissionais de design na criação de seus projetos. Com um leque de recursos disponíveis, é possível desenvolver toda a estrutura de um aplicativo mobile e também de websites de forma compartilhada, com animações e responsividade.",
     link: "https://www.figma.com",
-    icon: <SiFigma style={{ color: "white", fontSize: "40px" }} />,
+    icon: <SiAdobexd style={{ color: "white", fontSize: "40px" }} />,
   },
 ];
 
