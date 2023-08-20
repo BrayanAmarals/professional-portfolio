@@ -1,9 +1,10 @@
 import Header from "../components/Header/Header";
 import styles from "./Home.module.css";
-import brayanAvatar from "../assets/brayanAvatar.svg";
+import brayanAvatar from "../assets/brayanAvatar.png";
 import brayanPhoto from "../assets/brayanPhoto.jpeg";
 import skillsArray from "../data/skills";
 import projectsArray from "../data/projects";
+import formImage from "../assets/formImage.svg";
 
 const Home = () => {
   return (
@@ -76,21 +77,81 @@ const Home = () => {
           </h2>
 
           <div className={styles.projectsList}>
-            {projectsArray.map((project, index) => (
-              <div className={styles.projectCard} key={project.id}>
-                <div className={styles.projectImage}></div>
-                <div className={styles.projectTexts}>
-                  <h3 className={styles.projectTitle}>{project.category}</h3>
-                  <h1 className={styles.projectSubTitle}>{project.name}</h1>
+            {projectsArray.length != 0 ? (
+              projectsArray.map((project) => (
+                <div className={styles.projectCard} key={project.id}>
+                  <div className={styles.projectImage}></div>
+                  <div className={styles.projectTexts}>
+                    <h3 className={styles.projectTitle}>{project.category}</h3>
+                    <h1 className={styles.projectSubTitle}>{project.name}</h1>
 
-                  <p className={styles.projectDescription}>
-                    {project.description}
-                  </p>
-                  <a className={styles.projectButton}>Visitar site</a>
+                    <p className={styles.projectDescription}>
+                      {project.description}
+                    </p>
+                    <a className={styles.projectButton}>Visitar site</a>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))
+            ) : (
+              <h1 className={styles.inDevelopment}>Em desevolvimento...</h1>
+            )}
           </div>
+        </div>
+      </section>
+      <section className={styles.contactContainer}>
+        <div className={styles.contact}>
+          <img src={formImage} alt="" className={styles.contactImage} />
+          <form
+            action="https://formsubmit.co/brayanamarals01@gmail.com"
+            method="POST"
+            className={styles.contactForm}
+          >
+            <h2 className={styles.contactTitle}>CONTATO</h2>
+            <h2 className={styles.contactSubTitle}>Envie-me uma mensagem</h2>
+            <div className={styles.forms}>
+              <input
+                type="text"
+                placeholder="Primeiro nome"
+                name="firstName"
+                className={styles.input}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Sobrenome"
+                className={styles.input}
+                name="lastName"
+                required
+              />
+              <input
+                placeholder="Email"
+                type="email"
+                name="email"
+                className={styles.input}
+                required
+              />
+              <input
+                placeholder="Número de telefone"
+                className={styles.input}
+                name="phone"
+                required
+              />
+            </div>
+            <textarea
+              placeholder="Mensagem"
+              cols="30"
+              rows="10"
+              name="message"
+              className={styles.textArea}
+            ></textarea>
+            <button type="submit" className={styles.formButton}>
+              Enviar
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </form>
         </div>
       </section>
     </>

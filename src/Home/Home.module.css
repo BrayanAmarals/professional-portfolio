@@ -1,9 +1,17 @@
 .mainContainer {
-  height: 100vh;
-  background-color: black;
   color: white;
-  background: #ffffff url("../assets/bannerBackground.svg") no-repeat;
+
+  background: url("../assets/backgroundHome.svg") no-repeat,
+    linear-gradient(
+      225deg,
+      rgba(65, 60, 65, 1) 0%,
+      rgba(89, 54, 89, 1) 13%,
+      rgba(17, 17, 18, 1) 100%
+    );
+
   background-size: cover;
+  height: 100vh;
+  z-index: 1;
 }
 
 .banner {
@@ -12,6 +20,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 10rem;
 }
 
 .titles {
@@ -36,19 +45,21 @@
 }
 
 .description {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 200;
+  color: #d7ccd9;
 }
 
 .avatar {
-  width: 50rem;
+  width: 35rem;
+  z-index: 10;
 }
 
 .aboutMeContainer {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 15rem;
+  margin-top: 10rem;
   overflow: visible;
 }
 
@@ -56,7 +67,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80rem;
   gap: 5rem;
   overflow: visible;
 }
@@ -70,7 +81,7 @@
 
 .brayanPhoto {
   background-color: #b046c2;
-  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 10px 10px 0px 0px #d7ccd9;
   overflow-y: hidden;
   width: auto;
   height: 30rem;
@@ -103,12 +114,12 @@
 .descriptionAboutMe {
   width: 100%;
   margin: 1.5rem 0px 0px 0px;
-  font-size: 20px;
+  font-size: 18px;
   color: #242323;
 }
 
 .skillsContainer {
-  margin-top: 15rem;
+  margin-top: 10rem;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -119,13 +130,13 @@
 .skills {
   background-color: #b046c2;
   color: rgb(255, 255, 255);
-  width: 70rem;
+  width: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 20px;
   padding: 4rem;
-  box-shadow: 0px 20px 0px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 20px 0px 15px #d7ccd9;
   gap: 1rem;
   overflow: visible;
 }
@@ -142,19 +153,11 @@
   margin-top: -8px;
 }
 
-.skillsLine {
-  width: 3rem;
-  height: 5px;
-  background-color: #c4c4c4;
-  border: none;
-  margin-top: -10px;
-}
-
 .skillsDescription {
-  width: 80%;
+  width: 60%;
   margin: 1.5rem 0px 0px 0px;
-  font-size: 20px;
-  color: #dfdfdf;
+  font-size: 18px;
+  color: #d7ccd9;
 }
 
 .skillsList {
@@ -173,7 +176,7 @@
 
 .iconContainer {
   background-color: #958fec;
-  padding: 25px;
+  padding: 20px;
   border-radius: 99px;
   display: flex;
   align-items: center;
@@ -193,11 +196,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 17rem;
+  margin-top: 12rem;
 }
 
 .projects {
-  width: 80rem;
+  width: 70rem;
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -205,8 +208,8 @@
 }
 
 .projectImage {
-  width: 50%;
-  height: 30rem;
+  width: 30rem;
+  height: 20rem;
   background-color: #b046c2;
 }
 
@@ -283,9 +286,370 @@
   border-radius: 99px;
   align-self: flex-end;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.projectButton:hover {
+  font-size: 17px;
+  background-color: #e381f5;
+  color: white;
 }
 
 .hr {
   width: 200px;
   height: 40px;
+}
+
+.inDevelopment {
+  color: #d7ccd9;
+  font-size: 60px;
+}
+
+.contactContainer {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12rem;
+  background: rgb(176, 70, 194);
+  background: linear-gradient(
+    332deg,
+    rgba(176, 70, 194, 1) 0%,
+    rgba(75, 72, 75, 1) 100%
+  );
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.contactImage {
+  height: 40rem;
+  justify-self: flex-start;
+}
+
+.contactForm {
+  width: 50%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contactTitle {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.contactSubTitle {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  margin: 1rem 0 2rem 0;
+}
+
+.input {
+  background-color: transparent;
+  border: white solid 2px;
+  padding: 10px;
+  color: #dfdfdf;
+  border-radius: 10px;
+  outline: none;
+  transition: step-start 1s;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #dfdfdfc5;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  border: 2px solid #1c87c9;
+}
+
+.textArea {
+  background-color: transparent;
+  border: white solid 2px;
+  padding: 10px;
+  color: #dfdfdf;
+  border-radius: 10px;
+  width: 38.5rem;
+  outline: none;
+  transition: step-start 5s;
+}
+
+.forms {
+  display: grid;
+  width: 40rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.formButton {
+  color: white;
+  background-color: #b046c2;
+  border: none;
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.formButton span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #ffffff;
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.formButton:hover {
+  color: #b046c2;
+}
+
+.formButton:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.formButton span:nth-child(1) {
+  --n: 1;
+}
+
+.formButton span:nth-child(2) {
+  --n: 2;
+}
+
+.formButton span:nth-child(3) {
+  --n: 3;
+}
+
+.formButton span:nth-child(4) {
+  --n: 4;
+}
+
+@media screen and (max-width: 1320px) {
+  .banner {
+    gap: 2rem;
+  }
+
+  .hi {
+    font-size: 40px;
+  }
+
+  .brayan {
+    font-size: 60px;
+  }
+
+  .avatar {
+    width: 30rem;
+    z-index: 10;
+  }
+
+  .aboutMe {
+    width: 75%;
+  }
+
+  .aboutTexts {
+    width: 100%;
+  }
+
+  .skills {
+    width: 75%;
+  }
+
+  .projects {
+    width: 75%;
+  }
+
+  .inDevelopment {
+    font-size: 40px;
+  }
+
+  .contact {
+    padding: 0;
+    width: 75%;
+  }
+
+  .contactImage {
+    display: none;
+  }
+
+  .contactForm {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .avatar {
+    width: 20rem;
+  }
+
+  .description {
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+  .descriptionAboutMe {
+    font-size: 16px;
+  }
+
+  .skillsDescription {
+    font-size: 16px;
+  }
+
+  .skillsList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .banner {
+    flex-direction: column;
+  }
+  .aboutMe {
+    gap: 3rem;
+    flex-direction: column;
+  }
+  .titles {
+    width: 75%;
+  }
+
+  .mainTitle {
+    margin-bottom: 1rem;
+  }
+
+  .hi {
+    font-size: 30px;
+  }
+
+  .brayan {
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .whoAreYou {
+    font-size: 18px;
+  }
+
+  .aboutMeTitle {
+    font-size: 22px;
+  }
+
+  .inDevelopment {
+    font-size: 24px;
+  }
+
+  .ab .skills {
+    width: 30rem;
+    padding: 2rem;
+  }
+
+  .skillsList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .skillsTitle {
+    font-size: 18px;
+  }
+
+  .skillsSubTitle {
+    font-size: 22px;
+  }
+
+  .skillsDescription {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .projectsTitle {
+    font-size: 18px;
+  }
+
+  .projectsSubTitle {
+    font-size: 22px;
+  }
+
+  .iconContainer {
+    padding: 10px;
+  }
+
+  .contactTitle {
+    font-size: 18px;
+  }
+
+  .contactSubTitle {
+    font-size: 22px;
+    margin: 0.3rem 0 2rem 0;
+  }
+
+  .forms {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .textArea {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .aboutMe {
+    width: 85%;
+  }
+
+  .avatar {
+    width: 75%;
+  }
+
+  .skills {
+    width: 85%;
+    padding: 2rem;
+  }
+
+  .projects {
+    width: 85%;
+  }
+
+  .contact {
+    padding: 0;
+    width: 85%;
+  }
+
+  .skillsList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
