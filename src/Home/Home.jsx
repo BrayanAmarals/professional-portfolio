@@ -14,13 +14,13 @@ const Home = () => {
         <section className={styles.banner}>
           <div className={styles.titles}>
             <div className={styles.mainTitle}>
-              <h1 className={styles.hi}>Hi, my name is</h1>
+              <h1 className={styles.hi}>Olá, meu nome é</h1>
               <h1 className={styles.brayan}>Brayan...</h1>
             </div>
             <div>
               <p className={styles.description}>
-                I design and code beautifully simple things, <br />
-                and I love what I do.
+                "Front-end e UI design são minhas ferramentas <br />
+                para traduzir ideias em interfaces memoráveis."
               </p>
             </div>
           </div>
@@ -105,6 +105,7 @@ const Home = () => {
             action="https://formsubmit.co/brayanamarals01@gmail.com"
             method="POST"
             className={styles.contactForm}
+            target="_blank"
           >
             <h2 className={styles.contactTitle}>CONTATO</h2>
             <h2 className={styles.contactSubTitle}>Envie-me uma mensagem</h2>

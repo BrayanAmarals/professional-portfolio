@@ -4,6 +4,10 @@ import Home from "./Home/Home";
 const routes = createBrowserRouter([
   {
     path: "/professional-portfolio",
+    element: <Home />,
+  },
+  {
+    path: "/",
     index: "true",
     element: <Home />,
   },
