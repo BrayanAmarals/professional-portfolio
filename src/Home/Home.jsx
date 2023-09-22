@@ -73,28 +73,48 @@ const Home = () => {
         <div className={styles.projects}>
           <h2 className={styles.projectsTitle}>PORTFÓLIO</h2>
           <h2 className={styles.projectsSubTitle}>
-            Projetos que já participei
+            Projetos que já fiz / participei
           </h2>
 
           <div className={styles.projectsList}>
             {projectsArray.length != 0 ? (
               projectsArray.map((project) => (
                 <div className={styles.projectCard} key={project.id}>
-                  <div className={styles.projectImage}></div>
+                  <img
+                    className={styles.projectImage}
+                    style={
+                      project.mobile ? { width: "12rem", height: "25rem" } : {}
+                    }
+                    src={project.projectImg}
+                  />
                   <div className={styles.projectTexts}>
-                    <h3 className={styles.projectTitle}>{project.category}</h3>
-                    <h1 className={styles.projectSubTitle}>{project.name}</h1>
+                    <h3 className={styles.projectTitle}>
+                      {project.projectTopTitle}
+                    </h3>
+                    <h1 className={styles.projectSubTitle}>
+                      {project.projectTitle}
+                    </h1>
 
                     <p className={styles.projectDescription}>
-                      {project.description}
+                      {project.projectDescription}
                     </p>
-                    <a className={styles.projectButton}>Visitar site</a>
+                    <a className={styles.projectButton}>Visitar</a>
                   </div>
                 </div>
               ))
             ) : (
-              <h1 className={styles.inDevelopment}>Em desevolvimento...</h1>
+              <h1>Em desenvolvimento</h1>
             )}
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "flex-end",
+                width: "100%",
+                marginTop: "4rem",
+              }}
+            >
+              <h1 className={styles.more}>...</h1>
+            </div>
           </div>
         </div>
       </section>

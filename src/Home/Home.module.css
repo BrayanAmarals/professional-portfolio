@@ -210,7 +210,6 @@
 .projectImage {
   width: 30rem;
   height: 20rem;
-  background-color: #b046c2;
 }
 
 .projectsTitle {
@@ -483,6 +482,10 @@ textarea:active {
     width: 75%;
   }
 
+  .projectCard {
+    gap: 2rem;
+  }
+
   .inDevelopment {
     font-size: 40px;
   }
@@ -527,6 +530,34 @@ textarea:active {
 
   .skillsList {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .projectsList {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .projectCard {
+    flex-direction: column;
+  }
+
+  .projectImage {
+    width: 85%;
+    height: auto;
+  }
+
+  .projectTexts {
+    width: 85%;
+  }
+
+  .projectDescription {
+    font-size: 14px;
+  }
+
+  .projectButton {
+    width: 8rem;
+    height: 2.5rem;
   }
 }
 
@@ -651,5 +682,11 @@ textarea:active {
 
   .skillsList {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .projectButton {
+    width: 8rem;
+    height: 2rem;
+    font-size: 14px;
   }
 }
