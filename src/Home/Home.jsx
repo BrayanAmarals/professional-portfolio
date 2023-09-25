@@ -98,23 +98,23 @@ const Home = () => {
                     <p className={styles.projectDescription}>
                       {project.projectDescription}
                     </p>
-                    <a className={styles.projectButton}>Visitar</a>
+                    <a
+                      className={styles.projectButton}
+                      href={project.projectLink}
+                      target="_blank"
+                      style={{
+                        backgroundColor: project.color,
+                        pointerEvents: project.cursor,
+                      }}
+                    >
+                      Visitar
+                    </a>
                   </div>
                 </div>
               ))
             ) : (
               <h1>Em desenvolvimento</h1>
             )}
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "flex-end",
-                width: "100%",
-                marginTop: "4rem",
-              }}
-            >
-              <h1 className={styles.more}>...</h1>
-            </div>
           </div>
         </div>
       </section>
